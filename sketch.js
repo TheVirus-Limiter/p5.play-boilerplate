@@ -13,6 +13,15 @@ movingRect = createSprite(400, 200, 80, 30);
 
 function draw() {
   background(0);
+  
+ 
+
+  drawSprites();
+}
+
+function collide(){
+
+
   movingRect.x = World.mouseX;
   movingRect.y = World.mouseY;
   if (movingRect.x - fixedRect.x <= fixedRect.width/2 + movingRect.width/2 && 
@@ -30,5 +39,4 @@ function draw() {
 
   }
 
-  drawSprites();
 }
